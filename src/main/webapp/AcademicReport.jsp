@@ -13,7 +13,7 @@
 <p>AVERAGE MARKS: <%= request.getParameter("averageMarks")%></p>
 <p>GRADES: <%= request.getParameter("grade")%></p>
 
-<table>
+<table width="100%">
 	    <tr >
 	<td><b>Marks</b></td>
 	<td>92-100</td>
@@ -39,6 +39,7 @@
 <td>F</td>
 </tr>
 </table>
+
 <a href="ResponseTransfer.jsp">Back to main page</a>
 </body>
 </html>

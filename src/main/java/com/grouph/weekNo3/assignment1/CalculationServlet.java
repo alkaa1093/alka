@@ -1,4 +1,4 @@
-package com.login.servlet;
+package com.grouph.weekNo3.assignment1;
 
 import java.io.IOException;
 import java.util.Arrays;

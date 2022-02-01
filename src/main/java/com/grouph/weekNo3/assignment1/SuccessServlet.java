@@ -1,6 +1,9 @@
 package com.grouph.weekNo3.assignment1;
-
+/**
+ * @author Piyush and Komalpreet
+ */
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -35,6 +38,7 @@ public class SuccessServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	  //fetching the 5 Subject marks from the user 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter out = response.getWriter();  

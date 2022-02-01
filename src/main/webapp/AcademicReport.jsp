@@ -1,5 +1,9 @@
+<%-- author - Komal and Vishu
+this page shows the out put of the subjects entered by the user --%> 
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,6 +59,7 @@ table {
 <td>F</td>
 </tr>
 
+<%-- Group members Name--%> 
 </table> <br/> <br/>
 <ul class="list-group">
   <li class="list-group-item active">Group Members</li>

@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Servlet implementation class CalculationServlet
+ * @author Alka and Vishu
+ * the below code performs the calculations on the marks entered by obtained by the user and 
+ * gives the result
+ * 
  */
 @WebServlet("/CalculationServlet")
 public class CalculationServlet extends HttpServlet {
@@ -35,14 +39,17 @@ public class CalculationServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	//getting the project marks from the jsp page and calculating the average 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int subject1=Integer.parseInt(request.getParameter("subject1"));
 		int subject2=Integer.parseInt(request.getParameter("subject2"));
 		int subject3=Integer.parseInt(request.getParameter("subject3"));
 		int subject4=Integer.parseInt(request.getParameter("subject4"));
 		int subject5=Integer.parseInt(request.getParameter("subject5"));
+		//calculating the average of the marks 
 		float averageMarks=(subject1+subject2+subject3+subject4+subject5)/5;
 		Integer marksArray[] = new Integer[] {subject1,subject2,subject3,subject4,subject5}; 
+		//calculation the max and min max value
 		int maxMark=Collections.max(Arrays.asList(marksArray));
 		int minMark=Collections.min(Arrays.asList(marksArray));
 		String grade=getGrade(averageMarks);
@@ -52,6 +59,10 @@ public class CalculationServlet extends HttpServlet {
 		//request.setAttribute("grade",grade);
 //		RequestDispatcher rd=request.getRequestDispatcher("/AcademicReport.jsp");
 //		rd.forward(request, response);
+		
+		/*
+		 * sending the response of the calculation to the Academic report jsp page
+		 */
 		response.sendRedirect("AcademicReport.jsp?averageMarks="+averageMarks+"&maxMark="+maxMark+"&minMark="+minMark+
 				"&grade="+grade+"&userName="+request.getParameter("userName"));
 		doGet(request, response);

@@ -1,5 +1,7 @@
 package com.grouph.weekNo3.assignment1;
-
+/**
+ * @author Kajal And Piyush
+ */
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -39,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();  
 		String userName=request.getParameter("userName");  
 		String password=request.getParameter("password"); 
-		
+		//checking for password and redirecting it to SucessServlet using requestDispatcher
 		if(userName.equalsIgnoreCase(password))
 		{   
 			RequestDispatcher rd=request.getRequestDispatcher("SuccessServlet");  

@@ -1,5 +1,7 @@
 package com.grouph.weekNo3.assignment1;
-
+/**
+ * @author KomalPreet And Vishu
+ */
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -35,6 +37,7 @@ public class CookiesServletResponse extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	//displaying the value obtained from cookie to the servlet
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter(); 
 		Cookie ck[]=request.getCookies();  

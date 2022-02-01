@@ -1,4 +1,5 @@
-
+<!-- Author Kajal and piyush 
+this is a login page which authenticates the user checking the password and sends the paramen -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
 </head>
 <body>
 <h2>LOGIN FORM</h2>
-<form action="SessionServlet" method="post">  
+<form action="CookiesServlet" method="post">  
 UserName:<input type="text" name="userName"/><br/><br/>  
 Password:<input type="password" name="password"/><br/><br/>  
 <input type="submit">  

@@ -25,7 +25,7 @@ table {
 <p>AVERAGE MARKS: <%= request.getParameter("averageMarks")%></p>
 <p>GRADE: <%= request.getParameter("grade")%></p>
 
-<table>
+<table width="100%">
 	    <tr >
 	<td><b>Marks</b></td>
 	<td>94-100</td>
@@ -54,6 +54,7 @@ table {
 <td>D</td>
 <td>F</td>
 </tr>
+
 </table> <br/> <br/>
 <ul class="list-group">
   <li class="list-group-item active">Group Members</li>
@@ -63,6 +64,10 @@ table {
   <li class="list-group-item">Vishudeep Tiwari C0799365</li>
   <li class="list-group-item">Kajal C0796819</li>
 </ul>
+=======
+</table>
+
+
 <a href="ResponseTransfer.jsp">Back to main page</a>
 </body>
 </html>

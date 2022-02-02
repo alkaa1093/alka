@@ -41,7 +41,7 @@ public class CookiesServletResponse extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter(); 
 		Cookie ck[]=request.getCookies();  
-	    out.println("Hello "+ck[0].getValue());  
+	    out.println("Hello "+ck[1].getValue());  
 	   
 		out.close();  
 		

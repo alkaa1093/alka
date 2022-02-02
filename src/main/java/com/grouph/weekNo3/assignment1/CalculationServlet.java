@@ -82,23 +82,35 @@ public class CalculationServlet extends HttpServlet {
 	              break;
 	           // for >= 80 and <90
 	           case 8:
-	              grade = "B";
+	              grade = "A-";
 	              break;
 	           // for >= 70 and <80
 	           case 7:
-	              grade = "C";
+	              grade = "B+";
 	              break;
 	           // for >= 60 and <70
 	           case 6:
-	              grade = "D";
+	              grade = "B";
 	              break;
 	           // for >= 50 and <60
 	           case 5:
-	              grade = "E";
+	              grade = "B-";
 	              break;
+	           case 4:
+		              grade = "C";
+		              break;
+	           case 3:
+		              grade = "C-";
+		              break;
+	           case 2:
+		              grade = "D";
+		              break;
+	           case 1:
+		              grade = "F";
+		              break;
 	           // for < 50
 	           default:
-	              grade = "F";
+	              grade = "A+";
 	              break;
 	         }
 			return grade;

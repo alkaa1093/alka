@@ -1,6 +1,9 @@
 package com.grouph.weekNo3.assignment1;
-
+/**
+ * @author Alka
+ */
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -31,7 +34,7 @@ public class SessionServletResponse extends HttpServlet {
 
 	}
 
-	
+	//fetching the response from the Session servelet
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter out = response.getWriter(); 

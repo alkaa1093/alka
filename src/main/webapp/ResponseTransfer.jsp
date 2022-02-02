@@ -1,3 +1,5 @@
+<%-- this page the option to the user to choose between  using
+ session , cookiee and requestdispatcher methods --%> 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>

@@ -1,6 +1,10 @@
 package com.grouph.weekNo3.assignment1;
-
+/**
+ * @author Vishu and Alka
+ * this code  shows the transffering of info using sessions
+ */
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
@@ -37,6 +41,7 @@ public class SessionServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	//fetching the username and validation using Sessions
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");  
 		PrintWriter out = response.getWriter();  
@@ -44,7 +49,7 @@ public class SessionServlet extends HttpServlet {
 		String password=request.getParameter("password"); 
 
 		if(userName.equalsIgnoreCase(password))
-		{   
+		{   //Using Session to transfer information
 			HttpSession session=request.getSession();  
 			session.setAttribute("userName",userName);  
             out.print("<a href='SessionServletResponse'>Click here to transfer information using HTTP Session</a>");  	
